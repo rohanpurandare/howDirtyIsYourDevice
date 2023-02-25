@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How dirty is your device?</title>
+    <link rel="icon" type="png" href="favicon.png">
+</head>
+<body>
+    <a href="https://www.google.com/search?q=how+to+clean+your+laptop+screen&rlz=1C5CHFA_enUS953US953&oq=how+to+clean+your+lap&aqs=chrome.2.0i512j69i57j0i512l8.5646j0j1&sourceid=chrome&ie=UTF-8" target="_blank"><img id="img" class="img" src="patrick.png" width="400px"></a>
+    <a href="index.html"><img id="back" class="back" src="back.png" width="150px"></a>
+    <script>
+      let img = document.getElementById('img')
+      let time = 7000 // time in milliseconds
+      img.hidden = true // set img to hidden on load
+      setTimeout(()=> {
+        img.hidden = false // after timeout show img
+      }, time)
+      let img2 = document.getElementById('back')
+      let time2 = 7000 // time in milliseconds
+      img2.hidden = true // set img to hidden on load
+      setTimeout(()=> {
+        img2.hidden = false // after timeout show img
+      }, time2)
+    </script>
+    <style>
+        body {
+            background: black;
+        }
+        .img {
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+        }
+        .back {
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+        }
+    </style>
+</body>
+</html>
